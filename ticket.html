@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Detroit Blight Ticket Compliance Predictor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<!-- <a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+								</a> -->
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="ticket.html">Ticket Compliance Predictor</a></li>
+							<li><a href="reddit.html">Reddit Post Classifier</a></li>
+							<li><a href="shelter.html">COVID-19 and Shelter Occupancy</a></li>
+							<li><a href="lab.html">Lab Website</a></li>
+							<li><a href="barchart.html">Interactive Bar Chart</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Detroit Blight Ticket Compliance Predictor</h1>
+							<p>From the <a href="https://www.kaggle.com/c/detroit-blight-ticket-compliance/overview"  target="_blank">Kaggle competition website</a>:</p>
+							<p>"Every year, Detroit issues millions of dollars in fines to residents that fail to maintain their property (called blight violations), and every year, many of these fines remain unpaid. Enforcing unpaid blight fines is a costly and tedious process, so the city wants to know: how can we increase blight ticket compliance? The first step in answering this question is understanding when and why a resident might fail to comply with a blight ticket. This is where predictive modeling comes in. In the prediction competition, your task is simple - predict whether a given blight ticket will be paid on time."</p>
+							<p>For this project I used Pandas for data exploration and Scikit-learn to create a pipeline for data preprocessing and classification. Preprocessing involved handling missing values, transforming categorical variables, and incorporating latitudinal and longitudinal data. I used a Gradient Boosted Decision Tree classifier with grid search to find the best parameter settings. This classifier outperformed the Gaussian Naive Bayes classifier with non-engineered features I used as a baseline by approximately 20 points in the area under curve score.</p>
+							<p><a href="https://github.com/gateaumon/TicketCompliance"  target="_blank">Project Code</a></p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>The original work has been modified.</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

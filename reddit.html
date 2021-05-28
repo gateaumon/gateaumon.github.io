@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Reddit Post Classifier</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<!-- <a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+								</a> -->
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+                    <nav id="menu">
+                        <h2>Menu</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="ticket.html">Ticket Compliance Predictor</a></li>
+                            <li><a href="reddit.html">Reddit Post Classifier</a></li>
+                            <li><a href="shelter.html">COVID-19 and Shelter Occupancy</a></li>
+                            <li><a href="lab.html">Lab Website</a></li>
+                            <li><a href="barchart.html">Interactive Bar Chart</a></li>
+                        </ul>
+                    </nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Reddit Post Classifier</h1>
+							<p>In order to learn about the implementation of neural nets and the PyTorch framework, I started a text classification project using data from Reddit.</p>
+							<p>In the subreddit <a href="https://www.reddit.com/r/AmItheAsshole/" target="_blank">r/AmItheAsshole</a> users submit interpersonal conflicts they have and ask other users to judge whether they were the "asshole" in the situation. Posts are given a flair with one of four judgements 18 hours after the post was submitted:</p>
+							<ul>
+                                <li>Asshole</li>
+                                <li>Not the asshole</li>
+                                <li>Everyone sucks</li>
+                                <li>No assholes here</li>
+                            </ul>
+                            <p>Users put forth their judgements by leaving a comment on the post with an according code:</p>
+                            <ul>
+                                <li>YTA (you're the asshole)</li>
+                                <li>NTA (not the asshole)</li>
+                                <li>ESH (everyone sucks here)</li>
+                                <li>NAH (no assholes here)</li>
+                            </ul>
+                            <p>The winning judgement is the top comment (meaning it has the most votes) after 18 hours. To attempt to predict that final judgement, I developed, trained, and tested a bidirectional long short term memory neural network using the submission text and corresponding judgement.</p>
+							<p><a href="https://github.com/gateaumon/AITAClassifier"  target="_blank">Project Code</a></p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>The original work has been modified.</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
